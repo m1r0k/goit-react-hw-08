@@ -1,0 +1,38 @@
+.form {
+  margin: 0 auto 20px auto;
+  width: 360px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+.div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.input {
+  padding: 4px;
+  font-size: 18px;
+  width: 340px;
+  margin-bottom: 8px;
+}
+
+.btn {
+  background-color: #213547;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+}
+
+.btn:hover {
+  border: none;
+  background-color: #131f2a;
+  color: white;
+  transition: 500ms;
+}
+
+.error {
+  color: red;
+}

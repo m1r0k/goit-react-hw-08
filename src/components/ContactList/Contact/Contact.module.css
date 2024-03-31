@@ -1,0 +1,26 @@
+.card {
+  display: flex;
+  width: 360px;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+.contactData > p {
+  color: black;
+  line-height: 2;
+}
+
+.btn {
+  margin-left: auto;
+  height: 44px;
+  align-self: center;
+  background-color: #213547;
+}
+
+.btn:hover {
+  border: none;
+  background-color: #131f2a;
+  color: white;
+  transition: 500ms;
+}
