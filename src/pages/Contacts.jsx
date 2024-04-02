@@ -3,8 +3,10 @@ import { selectLoading } from "../redux/contacts/selectors";
 import { useEffect } from "react";
 import { fetchContacts } from "../redux/contacts/operations";
 import ContactList from "../components/ContactList/ContactList";
-import ContactEditor from "../components/ContactEditor/ContactEditor";
+import SearchBox from "../components/SearchBox/SearchBox";
+import ContactForm from "../components/ContactForm/ContactForm";
 import PageTitle from "../components/PageTitle/PageTitle";
+import Loader from "../components/Loader/Loader";
 
 export default function Contacts() {
   const dispatch = useDispatch();
@@ -15,9 +17,10 @@ export default function Contacts() {
   }, [dispatch]);
   return (
     <>
+      <ContactForm />
+      <SearchBox />
       <PageTitle>Your contacts</PageTitle>
-      <ContactEditor />
-      <div>{isLoading && "Request in progress..."}</div>
+      <div>{isLoading && <Loader />}</div>
       <ContactList />
     </>
   );

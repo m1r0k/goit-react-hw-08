@@ -7,7 +7,7 @@ export default function Login() {
     <div>
       <PageTitle>Please log in</PageTitle>
       <LoginForm />
-      <p>
+      <p style={{ textAlign: "center" }}>
         or
         <Link to="/register"> register </Link>
       </p>

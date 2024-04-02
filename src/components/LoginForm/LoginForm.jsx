@@ -14,20 +14,22 @@ export default function LoginForm() {
     <Formik
       initialValues={{
         email: "",
-        password: ",",
+        password: "",
       }}
       onSubmit={handlerSubmit}
     >
       <Form className={css.form} autoComplete="off">
         <label className={css.label}>
           Email
-          <Field type="email" name="email" />
+          <Field className={css.input} type="email" name="email" />
         </label>
         <label className={css.label}>
           Password
-          <Field type="password" name="password" />
+          <Field className={css.input} type="password" name="password" />
         </label>
-        <button type="submit">Log In</button>
+        <button className={css.btn} type="submit">
+          Log In
+        </button>
       </Form>
     </Formik>
   );
